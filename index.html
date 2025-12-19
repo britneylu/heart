@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>爱心代码</title>
+
+    <link rel="stylesheet" href="./static/css/style.css" />
+</head>
+
+<body>
+    <!-- INPUT VIEW -->
+    <div id="inputView" class="van-cell van-field love_you">
+        <div class="van-cell__title van-field__label">
+            <label>你要输入的内容</label>
+        </div>
+
+        <div class="van-field__body">
+            <input id="input" type="text" placeholder="你要输入的内容" />
+        </div>
+
+        <div class="van-cell__title van-field__label" style="text-align:center;">
+            <label id="confirm" style="cursor:pointer;">生成</label>
+        </div>
+    </div>
+
+    <!-- HEART TEXT -->
+    <p class="love_you" id="love" style="display:none;"></p>
+
+    <!-- MUSIC -->
+    <audio src="lovexf.mp3" autoplay loop controls></audio>
+
+    <!-- CANVAS -->
+    <canvas id="lovexf"></canvas>
+
+    <!-- JS -->
+    <script src="./static/js/animation.js"></script>
+    <script src="./static/js/click.js"></script>
+    <script src="./static/js/main.js"></script>
+</body>
+
+</html>
