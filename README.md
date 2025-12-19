@@ -1,5 +1,12 @@
 # Heart Animation
 
+---
+
+#### Live Demo 
+🔗 [https://britneylu.github.io/heart/](https://britneylu.github.io/heart/)
+
+---
+
 A simple interactive web page that displays an animated heart made of particles on a black background. Users can enter custom text, play background music, and trigger floating heart effects on click.
 
 Built with **HTML, CSS, and vanilla JavaScript**
