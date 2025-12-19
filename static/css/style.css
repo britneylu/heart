@@ -44,11 +44,29 @@ audio,
     text-shadow: 0 0 8px #fff;
 }
 
+/* Input box color match */
+#input {
+    background: #000;
+    color: #ffc0cb;
+    border: 0.8px solid #ffc0cb;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#input::placeholder {
+    color: rgba(255, 192, 203, 0.6);
+}
+
+#inputView>div {
+    margin-bottom: 5px;
+}
+
 #lovexf {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: 520;
+    height: 100svh;
 }
 
 @keyframes love-xf {
@@ -63,4 +81,47 @@ audio,
         filter: blur(0);
         letter-spacing: .05rem;
     }
+}
+
+/* small screen support */
+@media (max-width: 480px) {
+
+    /* move input slightly up */
+    #inputView {
+        top: 40%;
+    }
+
+    /* input */
+    #input {
+        width: 180px;
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    /* button */
+    #confirm {
+        padding: 5px 14px;
+        font-size: 0.9rem;
+    }
+
+    /* heart text */
+    .love_you {
+        font-size: 1.1rem;
+    }
+
+    #lovexf {
+        transform: scale(0.75);
+        transform-origin: center;
+    }
+
+    /* audio player */
+    audio {
+        width: 60%;
+        height: 40px;
+    }
+
+    #confirm {
+        touch-action: manipulation;
+    }
+
 }
