@@ -141,11 +141,11 @@ var ParticlePool = (function () {
         particleRate = settings.particles.length / settings.particles.duration, // particles/sec
         time;
 
-    // get point on heart with -PI <= t <= PI
     function pointOnHeart(t) {
+        const scale = window.innerWidth <= 480 ? 0.55 : 1;
         return new Point(
-            160 * Math.pow(Math.sin(t), 3),
-            130 * Math.cos(t) - 50 * Math.cos(2 * t) - 20 * Math.cos(3 * t) - 10 * Math.cos(4 * t) + 25
+            160 * Math.pow(Math.sin(t), 3) * scale,
+            (130 * Math.cos(t) - 50 * Math.cos(2 * t) - 20 * Math.cos(3 * t) - 10 * Math.cos(4 * t) + 25) * scale
         );
     }
 

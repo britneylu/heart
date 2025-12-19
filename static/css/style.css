@@ -109,9 +109,15 @@ audio,
         font-size: 1.1rem;
     }
 
-    #lovexf {
-        transform: scale(0.75);
-        transform-origin: center;
+    /* middle three elements */
+    .van-cell__title.van-field__label {
+        text-align: center !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .van-cell__title.van-field__label label {
+        display: inline-block;
     }
 
     /* audio player */
